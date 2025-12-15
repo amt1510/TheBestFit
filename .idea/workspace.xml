@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e653d92-6808-425a-bddb-bc5020c5d16a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mobile/app/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/app/measurements.tsx" afterDir="false" />
+    <list default="true" id="2e653d92-6808-425a-bddb-bc5020c5d16a" name="Changes" comment="Create Landing page">
+      <change afterPath="$PROJECT_DIR$/mobile/components/gender_selection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/components/measurements.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/components/profile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/types/onboarding.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/(tabs)/_layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/(tabs)/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/app/measurements.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +41,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aung\Documents\TheBestFit\mobile\components" />
+      <recent name="C:\Users\aung\Documents\TheBestFit\mobile\types" />
       <recent name="C:\Users\aung\Documents\TheBestFit\mobile\app" />
     </key>
   </component>
@@ -50,6 +55,18 @@
       <option name="presentableId" value="Default" />
       <updated>1765534837128</updated>
     </task>
+    <task id="LOCAL-00001" summary="Create Landing page">
+      <created>1765621730771</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765621730771</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create Landing page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Landing page" />
   </component>
 </project>

@@ -1,74 +1,49 @@
-import { View, Text, TextInput, Pressable } from "react-native";
+import { View } from "react-native";
 import { useState } from "react";
-import { router } from "expo-router";
+
+// import steps
+import MeasurementsStep from "@/components/measurements";
+import GenderStep from "@/components/gender_selection";
+import PhotoStep from "@/components/profile";
+
+// import type
+import { OnboardingData } from "@/types/onboarding";
 
 export default function HomeScreen() {
-  const [gender, setGender] = useState<"male" | "female" | null>(null);
+  const [step, setStep] = useState(1);
+  const [data, setData] = useState<OnboardingData>({});
+
+  const next = () => setStep((s) => s + 1);
+  const back = () => setStep((s) => s - 1);
 
   return (
-    <View style={{ flex: 1, padding: 20 }}>
-      <Text style={{ fontSize: 24, fontWeight: "600", marginBottom: 20 }}>
-        Enter measurements
-      </Text>
+    <View style={{ flex: 1 }}>
+      {step === 1 && (
+        <MeasurementsStep
+          data={data}
+          onChange={setData}
+          onNext={next}
+        />
+      )}
 
-      {/* Gender toggle */}
-      <View style={{ flexDirection: "row", marginBottom: 20 }}>
-        {["male", "female"].map((g) => (
-          <Pressable
-            key={g}
-            onPress={() => setGender(g as "male" | "female")}
-            style={{
-              flex: 1,
-              padding: 14,
-              marginRight: g === "male" ? 10 : 0,
-              borderRadius: 8,
-              borderWidth: 1,
-              borderColor: "#000",
-              backgroundColor: gender === g ? "#000" : "#fff",
-            }}
-          >
-            <Text
-              style={{
-                textAlign: "center",
-                color: gender === g ? "#fff" : "#000",
-                fontWeight: "500",
-              }}
-            >
-              {g.toUpperCase()}
-            </Text>
-          </Pressable>
-        ))}
-      </View>
-
-      {/* Your inputs here */}
-      <TextInput placeholder="Enter weight (kg)" style={inputStyle} />
-      <TextInput placeholder="Enter height (m)" style={inputStyle} />
-      <TextInput placeholder="Shoulders (cm)" style={inputStyle} />
-      <TextInput placeholder="Chest (cm)" style={inputStyle} />
-      <TextInput placeholder="Waist (cm)" style={inputStyle} />
-
-      {/* Next button */}
-      <Pressable
-        onPress={() => router.push("/measurements")}
-        style={{
-          marginTop: "auto",
-          backgroundColor: "#000",
-          padding: 16,
-          borderRadius: 8,
-        }}
-      >
-        <Text style={{ color: "#fff", textAlign: "center", fontWeight: "600" }}>
-          NEXT
-        </Text>
-      </Pressable>
+      {step === 2 && (
+        <GenderStep
+          data={data}
+          onChange={setData}
+          onNext={next}
+          onBack={back}
+        />
+      )}
+      {step === 3 && (
+        <PhotoStep
+          data={data}
+          onChange={setData}
+          onBack={back}
+          onFinish={() => {
+            console.log('Final payload:', data);
+          }}
+        />
+      )}
     </View>
   );
 }
-
-const inputStyle = {
-  borderWidth: 1,
-  borderColor: "#000",
-  borderRadius: 6,
-  padding: 12,
-  marginBottom: 12,
-};
