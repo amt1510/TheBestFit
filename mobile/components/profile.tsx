@@ -9,6 +9,7 @@ type StepThreeProps = {
   onFinish: () => void;
 };
 
+
 export default function PhotoStep({
   data,
   onChange,
