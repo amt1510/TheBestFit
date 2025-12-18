@@ -5,6 +5,7 @@ export type OnboardingData = {
   shoulders?: number;
   chest?: number;
   waist?: number;
+  hip?: number;
   gender?: 'male' | 'female';
   photoUri?: string;
 };

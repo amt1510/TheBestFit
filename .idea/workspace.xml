@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e653d92-6808-425a-bddb-bc5020c5d16a" name="Changes" comment="useState + transitions done">
-      <change afterPath="$PROJECT_DIR$/mobile/app/home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/assets/images/female.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/assets/images/male.png" afterDir="false" />
+    <list default="true" id="2e653d92-6808-425a-bddb-bc5020c5d16a" name="Changes" comment="Adding data persistence for backend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/app/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/components/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/components/profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/components/measurements.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/components/measurements.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/types/onboarding.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/types/onboarding.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,12 +65,20 @@
       <option name="project" value="LOCAL" />
       <updated>1765798025972</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding data persistence for backend">
+      <created>1765879005911</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765879005911</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create Landing page" />
     <MESSAGE value="useState + transitions done" />
-    <option name="LAST_COMMIT_MESSAGE" value="useState + transitions done" />
+    <MESSAGE value="Adding data persistence for backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding data persistence for backend" />
   </component>
 </project>

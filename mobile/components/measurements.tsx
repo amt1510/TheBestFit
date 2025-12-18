@@ -29,7 +29,7 @@ export default function MeasurementsStep({
             />
 
             <TextInput
-              placeholder="Height (m)"
+              placeholder="Height (cm)"
               style={inputStyle}
               keyboardType="numeric"
               onChangeText={(v) => update("height", Number(v))}
@@ -55,6 +55,14 @@ export default function MeasurementsStep({
               keyboardType="numeric"
               onChangeText={(v) => update("waist", Number(v))}
             />
+
+            <TextInput
+              placeholder="Hip (cm)"
+              style={inputStyle}
+              keyboardType="numeric"
+              onChangeText={(v) => update("hip", Number(v))}
+            />
+
       </View>
       <View style={styles.footer}>
             <Pressable style={buttonStyle} onPress={onNext}>

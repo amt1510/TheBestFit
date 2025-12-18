@@ -19,13 +19,12 @@ export default function IndexScreen() {
   const next = () => setStep((s) => s + 1);
   const back = () => setStep((s) => s - 1);
 
-  // 🔹 Check onboarding completion ONCE
+  // Check onboarding completion ONCE
   useEffect(() => {
     const checkOnboarding = async () => {
       const completed = await AsyncStorage.getItem(
         "onboardingCompleted"
       );
-
       if (completed === "true") {
         router.replace("/home");
       } else {
@@ -53,7 +52,7 @@ export default function IndexScreen() {
     }
   };
 
-  // 🔹 Prevent UI flicker while checking storage
+  // Prevent UI flicker while checking storage
   if (checking) {
     return <View style={{ flex: 1 }} />;
   }
