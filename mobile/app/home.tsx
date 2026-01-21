@@ -1,11 +1,6 @@
 import { View, Text } from "react-native";
 
-
 export default function HomeScreen() {
-
-    useEffect(() => {
-      console.log("Arrived at home");
-    }, []);
 
 
   return (
@@ -13,9 +8,6 @@ export default function HomeScreen() {
           <View style={styles.content}>
                 <Text style={titleStyle}>Home</Text>
 
-          </View>
-          <View style={styles.footer}>
-            <Text>Next</Text>
           </View>
         </View>
   );

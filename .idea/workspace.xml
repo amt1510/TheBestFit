@@ -4,12 +4,23 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e653d92-6808-425a-bddb-bc5020c5d16a" name="Changes" comment="Adding data persistence for backend">
+    <list default="true" id="2e653d92-6808-425a-bddb-bc5020c5d16a" name="Changes" comment="Data persisted locally">
+      <change afterPath="$PROJECT_DIR$/back_end/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/dist/qs.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/dist/qs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/lib/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/lib/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/test/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/test/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/test/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/test/stringify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/test/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/test/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/app/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/components/measurements.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/components/measurements.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/types/onboarding.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/types/onboarding.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,13 +83,21 @@
       <option name="project" value="LOCAL" />
       <updated>1765879005911</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Data persisted locally">
+      <created>1766049843500</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1766049843500</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create Landing page" />
     <MESSAGE value="useState + transitions done" />
     <MESSAGE value="Adding data persistence for backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding data persistence for backend" />
+    <MESSAGE value="Data persisted locally" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data persisted locally" />
   </component>
 </project>

@@ -35,8 +35,48 @@ export default function IndexScreen() {
     checkOnboarding();
   }, []);
 
+  function mapGenderToApi(gender: "male" | "female") {
+      if (gender === "male") return 0;
+      if (gender === "female") return 1;
+      throw new Error("Invalid gender value");
+  }
+
+
   const finishOnboarding = async () => {
     try {
+      if (data.gender === null || data.gender === undefined) {
+        throw new Error("Gender not selected");
+      }
+
+      const apiPayload = {
+        gender: mapGenderToApi(data.gender),
+        measurements: {
+          height: data.height ?? 0,
+          weight: data.weight ?? 0,
+          chest: data.chest ?? 0,
+          shoulders: data.shoulders ?? 0,
+          waist: data.waist ?? 0,
+          hips: data.hips ?? 0,
+        },
+        modelVersion: 0,
+        name: "test-avatar",
+      };
+
+      // Send to backend
+      const res = await fetch("http://10.0.2.2:3000/api/avatars/create", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(apiPayload),
+      });
+
+      if (!res.ok) {
+        const text = await res.text();
+        throw new Error(`API failed: ${res.status} ${text}`);
+      }
+
+      // Persist original UI-friendly data locally
       await AsyncStorage.setItem(
         "onboardingData",
         JSON.stringify(data)
@@ -51,6 +91,7 @@ export default function IndexScreen() {
       console.error("Failed to finish onboarding", err);
     }
   };
+
 
   // Prevent UI flicker while checking storage
   if (checking) {
