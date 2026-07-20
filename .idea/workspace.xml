@@ -5,27 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e653d92-6808-425a-bddb-bc5020c5d16a" name="Changes" comment="Data persisted locally">
-      <change afterPath="$PROJECT_DIR$/back_end/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/dist/qs.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/dist/qs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/lib/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/test/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/test/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/test/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/test/stringify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/node_modules/qs/test/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/node_modules/qs/test/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +23,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="36jzadTFGpoJYf9iJ8rV0udeQP2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -42,8 +35,15 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
   }
 }</component>
   <component name="RecentsManager">
