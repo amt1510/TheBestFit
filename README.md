@@ -2,40 +2,64 @@
 
 ## About the App
 
-TheBestFit is a React Native mobile application that generates a personalized 3D human avatar from a user's body measurements. Users provide measurements such as height, weight, and body dimensions through the mobile interface, which are then sent to the Meshcapade API to generate a realistic SMPL-based 3D body model. The project consists of a React Native front end for user interaction and an Express.js back end that securely communicates with the Meshcapade API using Axios.
+TheBestFit is a React Native mobile application that generates a personalised 3D human avatar from a user's body measurements. Users enter measurements such as height, weight, chest, waist, and hip dimensions through the mobile application. These measurements are then sent to the Meshcapade API, which generates a realistic SMPL-based 3D body model.
+
+The project follows a client-server architecture, consisting of a React Native (Expo) front end for user interaction and an Express.js back end that securely communicates with the Meshcapade API using Axios.
 
 ---
 
 ## Project Structure
 
-```
+```text
 TheBestFit/
-├── mobile/        # React Native (Expo) front-end
-├── backend/       # Express.js server and Meshcapade API integration
+├── mobile/
+│   ├── app/
+│   │   └── index.tsx
+│   └── components/
+│       ├── measurements.tsx
+│       ├── gender_selection.tsx
+│       └── profile.tsx
+├── backend/
+│   ├── index.js
+│   ├── package.json
+│   └── node_modules/
 └── README.md
 ```
 
-### Mobile Module
+### 📁 `mobile/`
 
-The `mobile` module contains the React Native (Expo) application responsible for:
+The `mobile` module contains the React Native (Expo) front end responsible for collecting user information and rendering the application's user interface.
 
-- Rendering the user interface using JSX/TSX components
-- Collecting user body measurements and profile information
-- Managing onboarding flow and local application state
-- Sending requests to the back-end service
-- Displaying generated avatar information
+#### 📁 `app/`
 
-### Back-end Module
+- **`index.tsx`** – Main entry point of the application. It manages the onboarding flow and renders the three user input screens.
 
-The `backend` module is built with **Express.js** and uses **Axios** to communicate with the Meshcapade API. It is responsible for:
+#### 📁 `components/`
 
-- Receiving requests from the mobile application
-- Authenticating requests with the Meshcapade API
-- Forwarding measurement data to the API
-- Returning avatar generation results to the mobile application
-- Keeping API credentials secure by preventing direct client-side access
+- **`measurements.tsx`** – Collects body measurements such as height, weight, chest, waist, and hip dimensions.
+- **`gender_selection.tsx`** – Allows the user to select their gender.
+- **`profile.tsx`** – Allows the user to optionally upload or capture a profile photo.
 
 ---
+
+### 📁 `backend/`
+
+The `backend` module is implemented using **Express.js** and **Axios**. It acts as an intermediary between the mobile application and the Meshcapade API by handling HTTP requests and securely managing API authentication.
+
+#### 📄 `index.js`
+
+- Configures the Express server.
+- Receives requests from the mobile application.
+- Uses Axios to forward requests to the Meshcapade API.
+- Returns the generated avatar data to the mobile application.
+
+#### 📦 Dependencies
+
+- **Express.js** – Provides the REST API endpoints used by the mobile application.
+- **Axios** – Handles HTTP communication with the Meshcapade API.
+
+---
+
 
 ## Project Progress
 
@@ -43,8 +67,8 @@ The `backend` module is built with **Express.js** and uses **Axios** to communic
 
 ### Total Project Phases
 
-| Phase | Description | Status |
-|--------|-------------|--------|
-| Phase 1 | Generate a personalized 3D avatar from body measurements using the Meshcapade API | 🟢 Current |
-| Phase 2 | Avatar customization, profile management, and enhanced user interaction | ⏳ Planned |
-| Phase 3 | Outfit fitting, visualization, and recommendation features | ⏳ Planned |
+| Phase | Description | Documentation | Status    |
+|--------|-------------|---------------|-----------|
+| Phase 1 | Generate a personalised 3D avatar from body measurements using the Meshcapade API. |   📖 [Phase 1 Guide](../../wiki/Phase-1)    | 🟢 Current    |
+| Phase 2 | Avatar customisation, profile management, and enhanced user interaction. | Coming soon   | ⏳ Planned     |
+| Phase 3 | Outfit fitting, visualisation, and recommendation features. | Coming soon   | ⏳ Planned     |
