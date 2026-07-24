@@ -69,6 +69,6 @@ The `backend` module is implemented using **Express.js** and **Axios**. It acts 
 
 | Phase | Description | Documentation                      | Status    |
 |---|-------------|------------------------------------|-----------|
-| 1 | Generate a personalised 3D avatar from body measurements using the Meshcapade API. | 📖 [Phase 1 Guide](https://github.com/amt1510/TheBestFit/wiki/Phase-1) | 🟢 Current    |
+| 1 | Generate a personalised 3D avatar from body measurements using the Meshcapade API. | 📖 [Phase 1](https://github.com/amt1510/TheBestFit/wiki/Phase-1) | 🟢 Current    |
 | 2 | Avatar customisation, profile management, and enhanced user interaction. | Coming soon                        | ⏳ Planned     |
 | 3 | Outfit fitting, visualisation, and recommendation features. | Coming soon                        | ⏳ Planned     |
